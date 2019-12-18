@@ -1,0 +1,10 @@
+<h1>Choose a door</h1>
+
+<%@doors.each do |door|%>
+
+<form action="/<%= door %>" method="get">
+  <button type="submit">Go to door number <%= door %> </button>
+</form>
+  
+
+<%end%>
